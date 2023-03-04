@@ -9,6 +9,8 @@ This is a simple retro style space invaders game with single level.
 
 ### Module Used:
 * Pygame 2.1.2
+* sys
+* random
 
 ## Pygame Installation
 Pygame is not pre-installed with python.
