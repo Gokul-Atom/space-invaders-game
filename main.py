@@ -11,7 +11,7 @@ clock = pygame.time.Clock()
 class PlayerShip(pygame.sprite.Sprite):
     def __init__(self, image):
         super().__init__()
-        self.image = pygame.image.load(f"D:/Game Assets/Spaceship/spaceship_{image + 1}.png").convert_alpha()
+        self.image = pygame.image.load(f"./Game Assets/Spaceship/spaceship_{image + 1}.png").convert_alpha()
         self.image = pygame.transform.rotozoom(self.image, 0, 0.5)
         self.rect = self.image.get_rect(midbottom=(400, 700))
         self.fire_missile = 0
@@ -44,7 +44,7 @@ class PlayerShip(pygame.sprite.Sprite):
 class PlayerMissiles(pygame.sprite.Sprite):
     def __init__(self, x_pos, y_pos):
         super().__init__()
-        self.image = pygame.image.load("D:/Game Assets/Fire/missile_1.png").convert_alpha()
+        self.image = pygame.image.load("./Game Assets/Fire/missile_1.png").convert_alpha()
         self.image = pygame.transform.rotozoom(self.image, 0, 0.5)
         self.rect = self.image.get_rect(midbottom=(x_pos, y_pos))
 
@@ -63,8 +63,8 @@ class PlayerMissiles(pygame.sprite.Sprite):
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, x_pos, y_pos):
         super().__init__()
-        self.image_1 = pygame.image.load("D:/Game Assets/Spaceship/enemy_spaceship_1.png").convert_alpha()
-        self.image_2 = pygame.image.load("D:/Game Assets/Spaceship/enemy_spaceship_2.png").convert_alpha()
+        self.image_1 = pygame.image.load("./Game Assets/Spaceship/enemy_spaceship_1.png").convert_alpha()
+        self.image_2 = pygame.image.load("./Game Assets/Spaceship/enemy_spaceship_2.png").convert_alpha()
         self.frame_index = randint(0, 1)
         self.frames = [self.image_1, self.image_2]
         self.image = self.frames[self.frame_index]
@@ -82,7 +82,7 @@ class Enemy(pygame.sprite.Sprite):
 class EnemyMissiles(pygame.sprite.Sprite):
     def __init__(self, x_pos, y_pos):
         super().__init__()
-        self.image = pygame.transform.rotate(pygame.image.load("D:/Game Assets/Fire/missile_2.png").convert_alpha(), 180)
+        self.image = pygame.transform.rotate(pygame.image.load("./Game Assets/Fire/missile_2.png").convert_alpha(), 180)
         self.rect = self.image.get_rect(midbottom=(x_pos, y_pos))
         self.image = pygame.transform.rotozoom(self.image, 0, 0.5)
         self.rect.inflate_ip(0, -90)
@@ -134,7 +134,7 @@ images = []
 index = 0
 pos = None
 for i in range(1, 4):
-    image = pygame.image.load(f"D:/Game Assets/Fire/explosion_{i}.png").convert_alpha()
+    image = pygame.image.load(f"./Game Assets/Fire/explosion_{i}.png").convert_alpha()
     images.append(image)
 
 font = pygame.font.Font(None, 50)
@@ -150,11 +150,11 @@ game_title_rect = game_title_surf.get_rect(center=(400, 200))
 start_message_surf = font.render('Press "Space" to destroy invaders', False, "white")
 start_message_rect = start_message_surf.get_rect(midbottom=(400, 700))
 
-spaceship_surf = pygame.image.load("D:/Game Assets/Spaceship/spaceship_1.png")
+spaceship_surf = pygame.image.load("./Game Assets/Spaceship/spaceship_1.png")
 spaceship_surf_1 = pygame.transform.scale2x(spaceship_surf)
 spaceship_rect_1 = spaceship_surf_1.get_rect(midright=(350, 400))
 
-spaceship_surf = pygame.image.load("D:/Game Assets/Spaceship/spaceship_2.png")
+spaceship_surf = pygame.image.load("./Game Assets/Spaceship/spaceship_2.png")
 spaceship_surf_2 = pygame.transform.scale2x(spaceship_surf)
 spaceship_rect_2 = spaceship_surf_2.get_rect(midleft=(450, 400))
 spaceship_rect_index = 0
