@@ -1,6 +1,8 @@
 # Space Invaders Game
 This is a simple retro style space invaders game with single level.
 
+There are 2 variants of player spaceship and 2 variants of enemy spaceship.
+
 ![](https://img.shields.io/badge/python-3.9.5-blue) ![](https://img.shields.io/badge/pygame-2.1.2-yellowgreen)
 
 ## Technologies Used
