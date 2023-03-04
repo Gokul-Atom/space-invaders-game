@@ -1,5 +1,5 @@
 # Space Invaders Game
-This is a simple retro style space invaders game with single level.
+This is a simple **retro style space invaders** game with single level.
 
 There are 2 variants of player spaceship and 2 variants of enemy spaceship.
 
@@ -15,14 +15,14 @@ There are 2 variants of player spaceship and 2 variants of enemy spaceship.
 * random
 
 ## Pygame Installation
-Pygame is not pre-installed with python.
+**Pygame** is not pre-installed with python.
 
 To install this module, type the following command in terminal.
 
 ```
 pip install pygame==2.1.2
 ```
-or use the requirements.txt file
+or use the **requirements.txt** file
 
 ```
 pip install -r requirements.txt
@@ -31,6 +31,6 @@ pip install -r requirements.txt
 * [ ] Add sound effects
 
 ## License
-This repository is licensed under GNU General Public License family.
+This repository is licensed under **GNU General Public License** family.
 
 ![](https://img.shields.io/badge/License-GPL-color)
