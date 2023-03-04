@@ -3,13 +3,13 @@ This is a simple retro style space invaders game with single level.
 
 There are 2 variants of player spaceship and 2 variants of enemy spaceship.
 
-![](https://img.shields.io/badge/python-3.9.5-blue) ![](https://img.shields.io/badge/pygame-2.1.2-yellowgreen)
+![](https://img.shields.io/badge/python-v3.9.5-blue) ![](https://img.shields.io/badge/pygame-v2.1.2-yellowgreen)
 
 ## Technologies Used
-### Language Used:
+### Language Used
 * Python 3.9.5
 
-### Module Used:
+### Module Used
 * Pygame 2.1.2
 * sys
 * random
@@ -27,7 +27,7 @@ or use the requirements.txt file
 ```
 pip install -r requirements.txt
 ```
-## Roadmap:
+## Roadmap
 * [ ] Add sound effects
 
 ## License
