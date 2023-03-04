@@ -27,6 +27,19 @@ or use the **requirements.txt** file
 ```
 pip install -r requirements.txt
 ```
+
+## Instructions
+* Run the program.
+* The new window is displayed with the game.
+* Welcome screen is presented 2 spaceships to choose from.
+* Use **left** or **right** arrow to choose the spaceship.
+* Press the **"Space"** key to **start** the game.
+* The spaceship can be **controlled** by using **arrow keys** and the missiles are fired automatically by spaceship.
+* **Avoid** getting hit by **enemy missiles**.
+* Enemy missiles can be destroyed by shooting them.
+* The game is over once the player shoots all enemies or get hit by enemy missile.
+* **Close** the window, to **terminate** the program.
+
 ## Roadmap
 * [ ] Add sound effects
 
